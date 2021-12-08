@@ -1,0 +1,89 @@
+
+canvas 
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  font: 0xffffff;
+}
+
+
+main 
+{
+  width: 100vw;
+  width: 100%;
+  margin: 0px auto;
+  padding: 120px 0px ;
+  color: white;
+  z-index: 99;
+  position: absolute;
+  font: #ffffff;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+
+:root {
+  --dark-bg: rgba(15, 15, 15, 0.95);
+  --spacing: 370px;
+
+  font-family: brandon-grotesque, georgia, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+h1, h2, h3, blockquote 
+{
+  font-family: elevon, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+header 
+{
+  background: var(--dark-bg);
+  grid-column: 2 / span 5;
+  font-size:2.5rem; 
+  padding: 2rem; 
+  margin-bottom: var(--spacing);
+}
+
+
+section 
+{
+  background: var(--dark-bg);
+  grid-column: 2 / 8;
+  font-size: 1.3rem; 
+  padding: 1rem; 
+  margin-bottom: var(--spacing);
+  line-height: 1.5;
+}
+
+
+blockquote 
+{
+  margin: 0;
+  grid-column: 2 / span 9;
+  padding: 0; 
+  margin-bottom: var(--spacing);
+}
+
+
+blockquote p
+{
+  color: black;
+  background-color: white;
+  margin: 0;
+  line-height:1;
+  display: inline;
+  font-size: 4rem;
+
+}
+
+.left 
+{
+  grid-column: 6 / 12;
+}
